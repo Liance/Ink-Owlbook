@@ -3,7 +3,7 @@ An unofficial collection of community-sourced examples, tips and tricks for Ink.
 
 ## *Where is the Ink Owlbook?*
 
-[The Ink Owlbook can be found here.](https://github.com/Liance/Ink-Owlbook/blob/main/Ink-Owlbook.md) 
+The Ink Owlbook can be found [here.](https://github.com/Liance/Ink-Owlbook/blob/main/Ink-Owlbook.md) 
 
 ## *What is the Ink Owlbook?*
 
