@@ -1,4 +1,4 @@
-# Ink-Owlbook
+# Ink Owlbook
 An unofficial collection of community-sourced examples, tips and tricks for Ink.
 
 ## *Where is the Ink Owlbook?*
