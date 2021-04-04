@@ -1,8 +1,7 @@
+<details>
 
+<summary>Table of Contents</summary>
 
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Ink Features - Tips and Tricks](#ink-features---tips-and-tricks)
 - [Variables and Logic](#variables-and-logic)
@@ -94,6 +93,8 @@
 - [Doc writing notes](#doc-writing-notes)
     - [Pattern Template](#pattern-template)
     - [Additional style notes](#additional-style-notes)
+
+</details>
 
 # Introduction
 
