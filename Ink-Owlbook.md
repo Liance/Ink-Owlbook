@@ -1964,6 +1964,34 @@ Otherwise, you might want to try using a **database function** (see elsewhere in
 [Useful additional tip from jack fractal about using >>dialog start tags.](https://discordapp.com/channels/329929050866843648/329929390358265857/649399963687845926)
 
 ---
+### Getting the Current Knot 
+
+If you need to get the current knot, you'll need to call functions outside of Inky. 
+
+In inkjs: `StoryState.currentPathString`
+
+In Ink-Unity C#:  `story.state.currentPathString`
+
+You could feed the results of these back into Inky by binding them to external functions. (TK: See: External Functions) Keep in mind that these functions will often return an address format that's nested, e.g. `knot.stitch.some.more.stuff` , so you'll need to extract the knots or stitches you need out of them.
+
+Within Inky, there's no way to get the divert of the current knot directly. ([https://discord.com/channels/329929050866843648/329929390358265857/768087065279463425](https://discord.com/channels/329929050866843648/329929390358265857/768087065279463425)) This is by design: in Inky, where we are, knot-wise, gets very complicated very fast as we throw in threads and tunnels and recursion, and these cases make attempts to get a "current knot" misleading.
+
+As a result, it's safer to set a variable manually whenever you switch up knots.
+
+```jsx
+VAR currentKnot = -> brickyard
+
+=== brickyard
+~ currentKnot = -> brickyard
+-> DONE
+=== claypit
+~ currentKnot = -> claypit
+-> DONE
+```
+
+Be careful with this - with larger games, you might want to set up automated testing or error checking to make sure your current knot variable is set correctly for all (non-threaded) knots. If you need to get the current knot from within Inky, it's often a code smell indicating that you might be better off doing things a different way.
+
+---
 
 ## C#/Unity Stuff
 
